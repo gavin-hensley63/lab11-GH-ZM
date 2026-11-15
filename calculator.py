@@ -28,3 +28,26 @@ def exp(a,b):
 
 
 
+# First example
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a + b
+
+def multiply(a, b):
+    return a * b
+
+
+
+def logarithm(a, b):
+    try:
+        if a == 0: raise ValueError("Can only take the logarithm of a positive number")
+        elif b == 0: raise ValueError("Can only take a logarithm with base of a positive number")
+        return math.log(a, b)
+    except ValueError as e:
+        print(str(e))
+        return 0
+
+def exponent(a, b):
+    return a ** b
