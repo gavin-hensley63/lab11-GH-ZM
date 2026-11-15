@@ -1,3 +1,8 @@
+# https://github.com/gavin-hensley63/lab11-GH-ZM
+# Partner 1: Gavin Hensley
+# Partner 2: Zijian Mao
+
+
 import unittest
 from calculator import *
 
