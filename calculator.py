@@ -26,12 +26,8 @@ def exp(a,b):
 
 
 def square_root(a):
-    try:
-        if a < 0: raise ValueError("Cannot take the square root of a negative number")
-        return math.sqrt(a)
-    except ValueError as e:
-        print(str(e))
-        return 0
+    if a < 0: raise ValueError("Cannot take the square root of a negative number")
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
@@ -40,11 +36,8 @@ def subtract(a, b):
     return a - b
 
 def logarithm(a, b):
-    try:
-        if a == 0: raise ValueError("Can only take the logarithm of a positive number")
-        elif b == 0: raise ValueError("Can only take a logarithm with base of a positive number")
-        if b == 1: raise ValueError("Cannot take the logarithm of 1")
-        return math.log(a, b)
-    except ValueError as e:
-        print(str(e))
-        return 0
+    if a == 0: raise ValueError("Can only take the logarithm of a positive number")
+    if b == 0: raise ValueError("Can only take a logarithm with base of a positive number")
+    if a == 1: raise ValueError("Cannot take the logarithm of 1")
+    if b == 1: raise ValueError("Cannot take the logarithm with base of 1")
+    return math.log(a, b)
